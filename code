@@ -1,0 +1,15 @@
+def alternate_case(input_string):
+    result = ""
+    for i in range(len(input_string)):
+        if i % 2 == 0:  # Check if the index is even
+            result += input_string[i].upper()
+        else:
+            result += input_string[i].lower()
+    return result
+
+# Get user input
+user_input = input("Enter a string: ")
+
+# Call the function and print the result
+result_string = alternate_case(user_input)
+print("Result:", result_string)
